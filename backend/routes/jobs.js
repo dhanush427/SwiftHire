@@ -1,30 +1,27 @@
 const express = require('express')
+const {
+  getJobs, 
+  getJob, 
+  createJob, 
+  deleteJob, 
+  updateJob
+} = require('../controllers/jobController')
 
 const router = express.Router()
 
 // GET all jobs
-router.get('/', (req, res) => {
-  res.json({mssg: 'GET all job'})
-})
+router.get('/', getJobs)
 
 // GET a single job
-router.get('/:id', (req, res) => {
-  res.json({mssg: 'GET a single job'})
-})
+router.get('/:id', getJob)
 
 // POST a new job
-router.post('/', (req, res) => {
-  res.json({mssg: 'POST a new job'})
-})
+router.post('/', createJob)
 
 // DELETE a job
-router.delete('/:id', (req, res) => {
-  res.json({mssg: 'DELETE a job'})
-})
+router.delete('/:id', deleteJob)
 
 // UPDATE a job
-router.patch('/:id', (req, res) => {
-  res.json({mssg: 'UPDATE a job'})
-})
+router.patch('/:id', updateJob)
 
 module.exports = router
