@@ -14,6 +14,7 @@ const Home = () => {
                     RCOS Fall 2024
                 </span>
                 <span>{<br/>}</span>
+                <span>{<br/>}</span>
                 <a hfref="#contact" className="btn">
                     Get Started
                 </a>
