@@ -9,6 +9,7 @@ import Contact from './components/contact/Contact';
 import Account from './components/account/Account';
 import JobPost from './pages/postJob';
 import searchJobs from './pages/searchJobs';
+import App from './pages/index_job';
 
 const App = () => {
   return (
@@ -25,7 +26,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<App />}/>
         <Route path="/postJob" element={<JobPost />}/>
-        <Route path="/searchJobs" element={<searchJobs />}/>
+        <Route path="/searchJobs" element={<App />}/>
       </Routes>
     </Router>
     </>
