@@ -18,3 +18,5 @@ const JobPost = () => {
         </main>
     )
 }
+
+export default JobPost;
