@@ -21,6 +21,7 @@ const App = () => {
       <Services />
       <Contact />
       <Account />
+      <UserProfile />
     </main>
     <Router>
       <Routes>
