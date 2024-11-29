@@ -17,18 +17,10 @@ const data = [
     {
         id: 2,
         image: Image2,
-        title: "AI-Powered Tools",
+        title: "Resume Management & Analysis",
         description:
-            "Take advantage of intelligent features like document management and resume optimizations",
+            "Take advantage of intelligent features to look at your resume and recommend jobs",
         link: "/"
-    },
-    {
-        id: 3,
-        image: Image3,
-        title: "Job Posting",
-        description:
-            "Expand your network and post new jobs to meet potential employees and candidates based on your criteria",
-        link: "/postJob",
     }
 ];
 
