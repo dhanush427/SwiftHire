@@ -7,6 +7,7 @@ import Services from './components/services/Services';
 import Contact from './components/contact/Contact';
 import Account from './components/account/Account';
 import JobPost from './pages/postJob';
+import UserProfile from './pages/userProfile';
 
 const App = () => {
   return (
