@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+
 .services__container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.875rem;
@@ -35,15 +41,20 @@
 }
 
 .services__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Bold for titles */
     font-size: var(--h3-font-size);
     margin-bottom: 1rem;
     color: #000000;
 }
 
 .services__description {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400; 
     color: #000000;
 }
 
 .services {
+    font-family: 'Roboto', sans-serif; 
     min-height: 100vh;
 }

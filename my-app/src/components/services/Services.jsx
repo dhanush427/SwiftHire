@@ -15,10 +15,18 @@ const data = [
     },
     {
         id: 2,
-        image: Image2,
+        image: Image1,
         title: "Resume Management & Analysis",
         description:
             "Take advantage of intelligent features to look at your resume and recommend jobs",
+        link: "/"
+    },
+    {
+        id: 3,
+        image: Image1,
+        title: "Personal Profile",
+        description:
+            "Have your own profile which employeers can view to see if your a goof fit for a position",
         link: "/"
     }
 ];
