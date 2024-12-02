@@ -6,6 +6,7 @@ import About from './components/about/About';
 import Services from './components/services/Services';
 import Contact from './components/contact/Contact';
 import Account from './components/account/Account';
+import Team from './components/team/Team';
 import JobPost from './pages/postJob';
 import UserProfile from './pages/userProfile';
 
@@ -16,9 +17,11 @@ const App = () => {
     <main className='main'>
       <Home />
       <About />
+      <Team />
       <Services />
       <Contact />
       <Account />
+      
       {/* <UserProfile /> */}
     </main>
     {/* <Router>
