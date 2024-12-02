@@ -10,6 +10,7 @@ import Team from './components/team/Team';
 import Search from './components/search/Search';
 import Notification from './components/noti/Notification';
 
+import ResumeSection from './components/ResumeSection/ResumeSection';
 import JobPost from './pages/postJob';
 import UserProfile from './pages/userProfile';
 
@@ -19,14 +20,12 @@ const App = () => {
     <Sidebar/>
     <main className='main'>
       <Home />
-      <Search />
-      <About />
       <Team />
-      <Services />
       <Contact />
       <Account />
       <Notification />
-      
+      <ResumeSection />
+      <Services />
       {/* <UserProfile /> */}
     </main>
     {/* <Router>
