@@ -8,6 +8,8 @@ import Contact from './components/contact/Contact';
 import Account from './components/account/Account';
 import Team from './components/team/Team';
 import Search from './components/search/Search';
+import Notification from './components/noti/Notification';
+
 import JobPost from './pages/postJob';
 import UserProfile from './pages/userProfile';
 
@@ -23,6 +25,7 @@ const App = () => {
       <Services />
       <Contact />
       <Account />
+      <Notification />
       
       {/* <UserProfile /> */}
     </main>
