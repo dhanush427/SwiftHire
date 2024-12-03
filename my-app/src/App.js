@@ -11,6 +11,7 @@ import Search from './components/search/Search';
 import Notification from './components/noti/Notification';
 
 import ResumeSection from './components/ResumeSection/ResumeSection';
+import Social from './components/social/Social';
 import JobPost from './pages/postJob';
 import UserProfile from './pages/userProfile';
 
@@ -27,6 +28,7 @@ const App = () => {
       <Notification />
       <ResumeSection />
       <Services />
+      <Social />
       {/* <UserProfile /> */}
     </main>
     {/* <Router>
