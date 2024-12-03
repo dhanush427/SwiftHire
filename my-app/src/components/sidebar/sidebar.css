@@ -1,38 +1,79 @@
+/* Sidebar Styling */
 .aside {
     position: fixed;
     left: 0;
     top: 0;
-    background: var(--body-color);
-    border-right: 1px solid rgba(0, 0, 0, 0,5);
-    padding: 2.5rem;
-    width: 110px;
+    background: white;
+    padding: 2rem 1rem;
+    width: 100px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     z-index: 10;
+    transition: background 0.3s ease;
 }
 
+.aside:hover {
+    background: white;
+
+}
+
+/* Logo Container */
+.logo-container {
+    margin-bottom: 2rem;
+}
+
+/* Navigation List */
 .nav__list {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    align-items: center;
+    row-gap: 2rem;
 }
 
+/* Navigation Links */
 .nav__link {
-    font-size: 1.5rem;
-    color: var(--title-color);
-    font-weight: var();
-    transition: .3s;
-}
-
-.copyright {
-    color: hsl(245, 15%, 65%);
-    font-size: var(--small-font-size);
-    transform: rotate(-180deg);
-    writing-mode: vertical-rl;
+    font-size: 1.8rem;
+    color: #aaa;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav__link:hover {
-    color:hsl(120, 100%, 68%);
+    color: #0fdb76;
+    transform: scale(1.2);
+}
+
+/* Navigation Icons */
+.nav__icon {
+    font-size: 2rem;
+}
+
+/* Hover Effect on Sidebar */
+.aside:hover .nav__link {
+    opacity: 1;
+}
+
+/* Smooth Transition for All */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .aside {
+        width: 80px;
+    }
+
+    .nav__icon {
+        font-size: 1.6rem;
+    }
+
+    .logo-container img {
+        width: 50px;
+    }
 }
