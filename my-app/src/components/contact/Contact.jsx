@@ -28,11 +28,10 @@ const Contact = () => {
     return (
         <section className="contact container section" id="contact">
             <h1 className="aboutUs">Get in Touch</h1>
-            <span>{<br />}</span>
             <div className="contact__data grid">
                 <div className="contact__info">
                     <p className="contact__details">
-                        Please contact us if you have any questions/concerns by filling out the form below:
+                        Please contact us if you have any questions or concerns by filling out the form below. We'd love to hear your feedback!
                     </p>
                     <span>{<br />}</span>
                 </div>

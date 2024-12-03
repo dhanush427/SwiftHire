@@ -113,3 +113,15 @@ h2 {
 .apple {
     background-color: #000;
 }
+
+.accountTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.account-description {
+    text-align: center;
+}

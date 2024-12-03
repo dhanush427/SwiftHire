@@ -38,7 +38,7 @@ function ResumeSection() {
   return (
     <section className="resume-section">
       <div className="resume-header">
-        <h1>Upload Your Resume</h1>
+        <h1 className="res-title">Upload Your Resume</h1>
         <span>{<br />}</span>
         <p>
           Discover how SwiftHire simplifies your job applications with easy

@@ -20,6 +20,7 @@ const App = () => {
     <>
     <Sidebar/>
     <main className='main'>
+      <Social />
       <Home />
       <Team />
       <Search />
@@ -27,9 +28,8 @@ const App = () => {
       <Contact />
       <Account />
       <Notification />
-      <ResumeSection />
       <Services />
-      <Social />
+      <ResumeSection />
       {/* <UserProfile /> */}
     </main>
     {/* <Router>

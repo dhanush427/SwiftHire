@@ -11,34 +11,20 @@ const data = [
     },
     {
         id: 2,
-        icon: <FaUserEdit />,
-        title: "Customizable Profile",
-        description: "Create a profile that showcases your skills and experience.",
+        
+        title: "Resume Analysis",
+        description:
+            "Take advantage of intelligent features to look at your resume and recommend jobs",
+        link: "/"
     },
     {
         id: 3,
-        icon: <FaBriefcase />,
-        title: "AI Recommended Jobs",
-        description: "Get job recommendations tailored to your profile.",
-    },
-    {
-        id: 4,
-        icon: <FaRocket />,
-        title: "One-Click Apply",
-        description: "Apply to jobs effortlessly with a single click.",
-    },
-    {
-        id: 5,
-        icon: <FaTasks />,
-        title: "Job Tracking",
-        description: "Manage all your applications in one convenient spot.",
-    },
-    {
-        id: 6,
-        icon: <FaChalkboardTeacher />,
-        title: "1-on-1 Interview Prep",
-        description: "Prepare for interviews with personalized coaching.",
-    },
+        
+        title: "Personal Profile",
+        description:
+            "Have your own profile which employeers can view to see if your a good fit for a position",
+        link: "/"
+    }
 ];
 
 const Services = () => {
@@ -46,14 +32,24 @@ const Services = () => {
         <section className="services container section" id="services">
             <h1 className="section__title">Our Services</h1>
             <span>{<br />}</span>
+            <span>{<br />}</span>
             <div className="services__container grid">
-                {data.map(({ id, icon, title, description }) => (
-                    <div className="services__card" key={id}>
-                        <div className="services__icon">{icon}</div>
-                        <h2 className="services__title">{title}</h2>
-                        <p className="services__description">{description}</p>
-                    </div>
-                ))}
+                {data.map(({ id, image, title, description }) => {
+                    return (
+                        <div className="services__card" key={id}>
+                            <img src={image} alt="" className="services__img" />
+                            <p className="services__title">{title}</p>
+                            <p className="services__description">{description}</p>
+                        </div>
+                    );
+                })}
+            </div>
+            <span>{<br />}</span>
+            <span>{<br />}</span>
+            <div className="services__info">
+                Try out our latest Resume Analysis & Management tool, currently in development, below!
+                <span>{<br />}</span>
+                Keep scrolling down to get started with this exclusive, early access feature:
             </div>
         </section>
     );

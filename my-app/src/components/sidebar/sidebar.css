@@ -44,36 +44,5 @@
 }
 
 .nav__link:hover {
-    color: #0fdb76;
-    transform: scale(1.2);
-}
-
-/* Navigation Icons */
-.nav__icon {
-    font-size: 2rem;
-}
-
-/* Hover Effect on Sidebar */
-.aside:hover .nav__link {
-    opacity: 1;
-}
-
-/* Smooth Transition for All */
-* {
-    transition: all 0.3s ease;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .aside {
-        width: 80px;
-    }
-
-    .nav__icon {
-        font-size: 1.6rem;
-    }
-
-    .logo-container img {
-        width: 50px;
-    }
+    color:#0078ff;
 }

@@ -13,7 +13,7 @@ const Home = () => {
                 <span className="home__education">RCOS Fall 2024</span>
                 <span>{<br />}</span>
                 <span>{<br />}</span>
-                <a href="#contact" className="btn">
+                <a href="#account" className="btn">
                     Get Started
                 </a>
             </div>

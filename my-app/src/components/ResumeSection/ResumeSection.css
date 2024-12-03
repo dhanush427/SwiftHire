@@ -61,14 +61,18 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   color: #fff;
-  background-color: #4caf50;
+  background-color: #0078ff;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .upload-button:hover {
-  background-color: #45a049;
+  background-color: #005bb5;
+  transition: background-color 0.3s ease;
+}
+
+.res-title {
+  text-align: center;
 }
