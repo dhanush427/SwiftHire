@@ -21,6 +21,7 @@ const App = () => {
     <main className='main'>
       <Home />
       <Team />
+      <Search />
       <Contact />
       <Account />
       <Notification />
