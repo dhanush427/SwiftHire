@@ -1,7 +1,6 @@
-/* Social Media Links Container */
 .social-media-container {
     position: fixed;
-    bottom: 0;
+    bottom: -100px; /* Initially hidden */
     left: 50%;
     transform: translateX(-50%);
     padding: 10px 0;
@@ -10,34 +9,38 @@
     width: 100%;
     text-align: center;
     z-index: 1000;
-  }
-  
-  /* List Style */
-  .social-media-list {
+    transition: bottom 0.3s ease-in-out; /* Smooth slide-in effect */
+}
+
+.social-media-container.show {
+    bottom: 0; /* Moves the container into view */
+}
+
+/* List Style */
+.social-media-list {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     gap: 1rem;
-  }
-  
-  /* Social Media Icon Style */
-  .social-media-list li {
+}
+
+/* Social Media Icon Style */
+.social-media-list li {
     display: inline-block;
-  }
-  
-  .social-icon {
+}
+
+.social-icon {
     font-size: 1.5rem;
     color: white;
     transition: color 0.3s ease;
-  }
-  
-  .social-icon:hover {
+}
+
+.social-icon:hover {
     color: #00aaff; /* Color for hover effect */
-  }
-  
-  .social-media-list a {
+}
+
+.social-media-list a {
     text-decoration: none;
-  }
-  
+}
