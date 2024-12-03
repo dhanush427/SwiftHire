@@ -1,63 +1,115 @@
 .account-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 10vh 0;
-    background-color: var(--container-color);
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
 }
 
 .form-container {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
-    text-align: center;
 }
 
 h2 {
-    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 15px;
     color: #333;
 }
 
 .input-field {
     width: 100%;
-    padding: 0.8rem;
-    margin: 0.5rem 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .form-button {
     width: 100%;
-    padding: 0.8rem;
-    margin: 1rem 0;
-    background-color: var(--first-color);
-    color: white;
-    font-size: 1rem;
+    padding: 10px;
+    background-color: #0078ff;
+    color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
 .form-button:hover {
-    color:hsl(0, 0%, 0%);
+    background-color: #005bb5;
 }
 
 .toggle-text {
-    font-size: 0.9rem;
-    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
 }
 
 .toggle-link {
-    color: var(--first-color);
+    color: #0078ff;
     cursor: pointer;
     font-weight: bold;
+    text-decoration: underline;
 }
 
-.toggle-link:hover {
-    text-decoration: underline;
+.social-signup {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-signup p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual Button Colors */
+.google {
+    background-color: #db4437;
+}
+
+.email {
+    background-color: #0d47a1;
+}
+
+.github {
+    background-color: #333;
+}
+
+.apple {
+    background-color: #000;
 }

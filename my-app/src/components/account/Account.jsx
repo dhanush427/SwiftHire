@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./account.css";
+import { FaGoogle, FaGithub, FaApple } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Account = () => {
     const [isSignUp, setIsSignUp] = useState(false);
@@ -11,7 +13,7 @@ const Account = () => {
     return (
         <section className="account container section" id="account">
             <h1 className="accountTitle">Account Login/Registration</h1>
-            <span>{<br/>}</span>
+            <span>{<br />}</span>
             <p className="account-description">
                 Let's get started! Sign up today, or log in if you're a returning user:
             </p>
@@ -38,6 +40,23 @@ const Account = () => {
                             </p>
                         </form>
                     )}
+                    <div className="social-signup">
+                        <p>Or sign in using:</p>
+                        <div className="social-icons">
+                            <button className="social-btn google">
+                                <FaGoogle /> Google
+                            </button>
+                            <button className="social-btn email">
+                                <MdEmail /> School Email
+                            </button>
+                            <button className="social-btn github">
+                                <FaGithub /> GitHub
+                            </button>
+                            <button className="social-btn apple">
+                                <FaApple /> Apple ID
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

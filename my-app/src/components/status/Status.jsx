@@ -5,7 +5,7 @@ const JobStatusBar = () => {
   return (
     <div className="job-status-bar">
       <div className="status-item applied">
-        <h3 color="white" >Jobs Applied</h3>
+        <h3>Jobs Applied</h3>
         <p>10</p>
       </div>
       <div className="status-item rejected">
