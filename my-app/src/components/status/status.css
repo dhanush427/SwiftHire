@@ -1,0 +1,70 @@
+/* Job Status Bar Styling */
+.job-status-bar {
+    position: absolute;
+    top: 80px; /* Adjust based on your search bar's position */
+    right: 20px;
+    width: 300px;
+    background-color: #f9f9f9;
+    color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two items per row */
+    gap: 10px;
+  }
+  
+  .status-item {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .status-item h3 {
+    margin: 0 0 5px;
+    font-size: 1rem;
+    color: #f9f9f9;
+  }
+  
+  .status-item p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  /* Status Colors */
+  .applied {
+    background-color: #0078ff; /* Blue for applied jobs */
+  }
+  
+  .rejected {
+    background-color: #ff4d4f; /* Red for rejected jobs */
+  }
+  
+  .accepted {
+    background-color: #28a745; /* Green for accepted jobs */
+  }
+  
+  .unfinished {
+    background-color: #ffc107; /* Yellow for unfinished applications */
+  }
+  
+  /* Hover Effect */
+  .status-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .job-status-bar {
+      width: 100%;
+      right: 0;
+      grid-template-columns: 1fr; /* One item per row for smaller screens */
+    }
+  }
+  

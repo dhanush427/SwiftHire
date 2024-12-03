@@ -9,7 +9,7 @@ import Account from './components/account/Account';
 import Team from './components/team/Team';
 import Search from './components/search/Search';
 import Notification from './components/noti/Notification';
-
+import Status from './components/status/Status';
 import ResumeSection from './components/ResumeSection/ResumeSection';
 import Social from './components/social/Social';
 import JobPost from './pages/postJob';
@@ -23,6 +23,7 @@ const App = () => {
       <Home />
       <Team />
       <Search />
+      <Status />
       <Contact />
       <Account />
       <Notification />
