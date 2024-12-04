@@ -87,3 +87,11 @@
 .contact__details {
     text-align: center;
 }
+
+body.dark-mode .aboutUs {
+    color: white;
+}
+
+body.dark-mode .contact__form-input {
+    background-color: #333;
+}

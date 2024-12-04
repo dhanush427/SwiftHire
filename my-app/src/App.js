@@ -21,19 +21,20 @@ const App = () => {
     <>
     <Sidebar/>
     <main className='main'>
-      <Social />
+      
       <Home />
       
       
       <Team />
       <Search />
       <Status />
+      <ResumeSection />
       <Testjob />
       <Contact />
       <Account />
       <Notification />
       <Services />
-      <ResumeSection />
+      <Social />
       {/* <UserProfile /> */}
     </main>
     {/* <Router>

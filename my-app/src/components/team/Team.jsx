@@ -47,6 +47,12 @@ const MeetTheTeam = () => {
                     </div>
                 ))}
             </div>
+            <span>{<br/>}</span>
+            <div className="services__info">
+                Try out our latest Resume Analysis and Job Listing tools, currently in development, below!
+                <span>{<br />}</span>
+                Keep scrolling down to get started with these exclusive, early access features:
+            </div>
         </section>
     );
 };

@@ -91,7 +91,7 @@ const JobList = () => {
           {jobs.map((job) => (
             <div
               key={job.id}
-              className="job-list__item"
+              className={`job-list__item ${selectedJob?.id === job.id ? "job-list__item--selected" : ""}`}
               onClick={() => setSelectedJob(job)}
             >
               <h3>{job.title}</h3>
@@ -104,7 +104,7 @@ const JobList = () => {
           {selectedJob ? (
             <>
               <h2>{selectedJob.title}</h2>
-              <h3>{selectedJob.company}</h3>
+              <h3 className="job-list__details-company">{selectedJob.company}</h3>
               <p><strong>Location:</strong> {selectedJob.location}</p>
               <p>{selectedJob.description}</p>
               <h4>Requirements:</h4>

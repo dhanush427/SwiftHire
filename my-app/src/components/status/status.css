@@ -1,70 +1,118 @@
 /* Job Status Bar Styling */
 .job-status-bar {
-    position: absolute;
-    top: 80px; /* Adjust based on your search bar's position */
-    right: 20px;
-    width: 300px;
-    background-color: #f9f9f9;
-    color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    z-index: 1000;
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two items per row */
-    gap: 10px;
-  }
-  
-  .status-item {
-    text-align: center;
-    padding: 10px;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 0.9rem;
-    font-weight: bold;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .status-item h3 {
-    margin: 0 0 5px;
-    font-size: 1rem;
-    color: #f9f9f9;
-  }
-  
-  .status-item p {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-  
-  /* Status Colors */
-  .applied {
-    background-color: #0078ff; /* Blue for applied jobs */
-  }
-  
-  .rejected {
-    background-color: #ff4d4f; /* Red for rejected jobs */
-  }
-  
-  .accepted {
-    background-color: #28a745; /* Green for accepted jobs */
-  }
-  
-  .unfinished {
-    background-color: #ffc107; /* Yellow for unfinished applications */
-  }
-  
-  /* Hover Effect */
-  .status-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .job-status-bar {
+  position: absolute;
+  top: 80px; /* Adjust based on your search bar's position */
+  right: 20px;
+  width: 300px;
+  background-color: #f9f9f9; /* Light Mode Background */
+  color: #333; /* Light Mode Text Color */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two items per row */
+  gap: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Job Status Bar */
+body.dark-mode .job-status-bar {
+  background-color: #333; /* Dark Background */
+  color: #f9f9f9; /* Light Text for Dark Mode */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Darker Shadow */
+}
+
+/* Status Item */
+.status-item {
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff; /* Light Mode Text Color */
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dark Mode Status Item */
+body.dark-mode .status-item {
+  color: #fff; /* White Text for Dark Mode */
+}
+
+/* Status Item Titles */
+.status-item h3 {
+  margin: 0 0 5px;
+  font-size: 1rem;
+  color: #f9f9f9; /* Light Mode Text */
+}
+
+/* Dark Mode Status Item Titles */
+body.dark-mode .status-item h3 {
+  color: #f9f9f9; /* White Title for Dark Mode */
+}
+
+/* Status Item Numbers */
+.status-item p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Dark Mode Status Item Numbers */
+body.dark-mode .status-item p {
+  color: #f9f9f9; /* White Text for Dark Mode */
+}
+
+/* Status Colors */
+.applied {
+  background-color: #0078ff; /* Blue for applied jobs */
+}
+
+.rejected {
+  background-color: #ff4d4f; /* Red for rejected jobs */
+}
+
+.accepted {
+  background-color: #28a745; /* Green for accepted jobs */
+}
+
+.unfinished {
+  background-color: #ffc107; /* Yellow for unfinished applications */
+}
+
+/* Dark Mode Status Colors */
+body.dark-mode .applied {
+  background-color: #0066cc; /* Darker Blue for Dark Mode */
+}
+
+body.dark-mode .rejected {
+  background-color: #d13236; /* Darker Red for Dark Mode */
+}
+
+body.dark-mode .accepted {
+  background-color: #218838; /* Darker Green for Dark Mode */
+}
+
+body.dark-mode .unfinished {
+  background-color: #e6a500; /* Darker Yellow for Dark Mode */
+}
+
+/* Hover Effect */
+.status-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode Hover Effect */
+body.dark-mode .status-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Light Hover Effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .job-status-bar {
       width: 100%;
       right: 0;
       grid-template-columns: 1fr; /* One item per row for smaller screens */
-    }
   }
-  
+}

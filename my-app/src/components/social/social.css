@@ -1,13 +1,17 @@
+/* Social Media Container */
 .social-media-container {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding: 10px 0;
+  padding: 30px 0;
   width: 100%;
   text-align: center;
   z-index: 1000;
+  transition: background-color 0.3s ease;
 }
+
+
 
 /* List Style */
 .social-media-list {
@@ -26,12 +30,22 @@
 
 .social-icon {
   font-size: 2rem;
-  color: black;
+  color: #333; /* Default icon color for light mode */
   transition: color 0.3s ease;
 }
 
+/* Dark Mode icon color */
+body.dark-mode .social-icon {
+  color: #fff; /* White icons for dark mode */
+}
+
+/* Hover effect */
 .social-icon:hover {
-  color: #007BFF; /* Color for hover effect */
+  color: #007BFF; /* Blue hover color */
+}
+
+body.dark-mode .social-icon:hover {
+  color: #1E90FF;
 }
 
 .social-media-list a {

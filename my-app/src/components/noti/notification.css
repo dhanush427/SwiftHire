@@ -4,7 +4,7 @@
     position: fixed;
     bottom: 1rem;
     right: 1rem;
-    background-color: #ffffff;
+    background-color: #ffffff; /* Light Mode Background */
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -12,23 +12,33 @@
     font-family: 'Roboto', sans-serif;
     width: 180px;
     z-index: 1000;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Dark Mode Notifications Bar */
+body.dark-mode .notifications-bar {
+    background-color: #333; /* Dark Background */
+    border: 1px solid #444; /* Dark Border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Darker Shadow */
+}
+
+/* Notifications Bar Open State */
 .notifications-bar.open {
     max-height: 300px;
 }
 
+/* Notifications Bar Closed State */
 .notifications-bar:not(.open) {
     max-height: 50px;
 }
 
+/* Toggle Button */
 .toggle-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #007BFF;
+    background-color: #007BFF; /* Light Mode Button */
     color: #fff;
     padding: 0.5rem;
     border: none;
@@ -39,10 +49,22 @@
     transition: background-color 0.3s ease;
 }
 
+/* Dark Mode Toggle Button */
+body.dark-mode .toggle-btn {
+    background-color: #1e90ff; /* Lighter Blue Button in Dark Mode */
+}
+
+/* Toggle Button Hover Effect */
 .toggle-btn:hover {
     background-color: #0056b3;
 }
 
+/* Dark Mode Toggle Button Hover Effect */
+body.dark-mode .toggle-btn:hover {
+    background-color: #1c75d0;
+}
+
+/* Notifications List */
 .notifications-list {
     list-style: none;
     padding: 0.5rem;
@@ -51,17 +73,26 @@
     max-height: 250px;
 }
 
+/* Notification Item */
 .notification-item {
     padding: 0.5rem;
     border-bottom: 1px solid #f1f1f1;
     font-size: 0.9rem;
-    color: #333;
+    color: #333; /* Light Mode Text Color */
 }
 
-.notification-item:last-child {
-    border-bottom: none;
+/* Dark Mode Notification Item */
+body.dark-mode .notification-item {
+    color: #fff; /* White Text for Dark Mode */
+    border-bottom: 1px solid #444; /* Darker Border for Items */
 }
 
+/* Notification Item Hover */
 .notification-item:hover {
     background-color: #f9f9f9;
+}
+
+/* Dark Mode Notification Item Hover */
+body.dark-mode .notification-item:hover {
+    background-color: #444; /* Dark Background for Hover */
 }

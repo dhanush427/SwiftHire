@@ -125,3 +125,7 @@ h2 {
 .account-description {
     text-align: center;
 }
+
+body.dark-mode .accountTitle {
+    color: white;
+}

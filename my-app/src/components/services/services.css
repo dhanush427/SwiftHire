@@ -78,10 +78,25 @@
     margin-top: 1rem;
 }
 
-.services__info {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #333;
-    margin-top: 1rem;
+body.dark-mode .section__title {
+    color: white;
+}
+
+
+.services__info-link {
+    color: #0078ff;
+}
+
+body.dark-mode .services__info-link {
+    color: #0078ff;
+}
+
+body.dark-mode .services__card {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .services__title {
+    background-color: #333;
+    color: white;
 }

@@ -6,15 +6,15 @@ const data = [
     {
         id: 1,
         icon: <FaBrain />,
-        title: "AI Resume Update",
-        description: "Let our AI refine your resume with industry-specific keywords.",
+        title: "Curated Job Postings",
+        description: "Browse through a collection of jobs, new and old, and search for specific companies and roles, while keeping track of active/inactive applications.",
     },
     {
         id: 2,
         
-        title: "Resume Analysis",
+        title: "Resume Analysis/Management",
         description:
-            "Take advantage of intelligent features to look at your resume and recommend jobs",
+            "Take advantage of intelligent features to look at your resume by uploading a file and recommending jobs based on experience and other factors.",
         link: "/"
     },
     {
@@ -22,7 +22,7 @@ const data = [
         
         title: "Personal Profile",
         description:
-            "Have your own profile which employeers can view to see if your a good fit for a position",
+            "Have your own profile which employeers can view to see if you are a good fit for a particular position.",
         link: "/"
     }
 ];
@@ -44,12 +44,12 @@ const Services = () => {
                     );
                 })}
             </div>
-            <span>{<br />}</span>
-            <span>{<br />}</span>
+            
+            <span>{<br/>}</span>
             <div className="services__info">
-                Try out our latest Resume Analysis & Management tool, currently in development, below!
-                <span>{<br />}</span>
-                Keep scrolling down to get started with this exclusive, early access feature:
+                Please visit our GitHub: <h2 className="services__info-link">https://github.com/dhanush427/SwiftHire</h2>
+                <span>{<br/>}</span>
+                2024 SwiftHire. All rights reserved. Please contact rcos.swifthire@gmail.com with any inquiries.
             </div>
         </section>
     );

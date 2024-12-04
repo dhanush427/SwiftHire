@@ -40,7 +40,7 @@ function ResumeSection() {
       <div className="resume-header">
         <h1 className="res-title">Upload Your Resume</h1>
         <span>{<br />}</span>
-        <p>
+        <p className="res-desc">
           Discover how SwiftHire simplifies your job applications with easy
           resume uploads. Add your file, specify your target company and
           position, and gain insights into tailored job recommendations.

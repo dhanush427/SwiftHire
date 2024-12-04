@@ -76,3 +76,20 @@
 .res-title {
   text-align: center;
 }
+
+body.dark-mode .resume-section {
+  background-color: #444;
+  color: white; 
+}
+
+body.dark-mode .res-title {
+  color: white;
+}
+
+body.dark-mode .services__info {
+  color: white;
+}
+
+body.dark-mode .res-desc {
+  color: white;
+}

@@ -4,6 +4,7 @@
     justify-content: center;
     padding: 2rem;
     background-color: #f9f9f9;
+    margin-top: 5rem;
   }
   
   .job-list__container {
@@ -89,4 +90,34 @@
   .apply-btn:hover {
     background-color: #005bb5;
   }
+
+  .job-list__item--selected {
+    background-color: #0078ff;
+    color: white;
+    font-weight: bold;
+  }
+
+
+body.dark-mode .job-list__container {
+  background-color: #444;
+  color: white; 
+}
+
+body.dark-mode .job-list.container {
+  background-color: #444;
+  color: white; 
+}
+
+
+body.dark-mode .description {
+    color: white;
+}
+
+body.dark-mode .services__info {
+    color: white;
+}
+
+body.dark-mode .job-list__details-company {
+  color: #333;
+}
   
