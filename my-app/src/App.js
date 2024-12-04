@@ -12,6 +12,7 @@ import Notification from './components/noti/Notification';
 import Status from './components/status/Status';
 import ResumeSection from './components/ResumeSection/ResumeSection';
 import Social from './components/social/Social';
+import Testjob from './components/testjob/Testjob'; 
 import JobPost from './pages/postJob';
 import UserProfile from './pages/userProfile';
 
@@ -22,9 +23,12 @@ const App = () => {
     <main className='main'>
       <Social />
       <Home />
+      
+      
       <Team />
       <Search />
       <Status />
+      <Testjob />
       <Contact />
       <Account />
       <Notification />

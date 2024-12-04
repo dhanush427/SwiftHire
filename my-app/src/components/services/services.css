@@ -20,7 +20,7 @@
 /* Service Card Styling */
 .services__card {
     background: #fff;
-    border: 2px solid #28a745; /* Green outline */
+    border: 2px solid #0078ff;; /* Green outline */
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -34,17 +34,17 @@
 }
 
 .services__card:nth-child(1) {
-    background-color: #0078ff;
+    background-color: white;
     box-shadow: 0px 5px 20x 0px rgb(57, 228, 131 / 50%);
 }
 
 .services__card:nth-child(2) {
-    background-color: #0078ff;
+    background-color: white;
     box-shadow: 0px 5px 20x 0px rgb(57, 228, 131 / 50%);
 }
 
 .services__card:nth-child(3) {
-    background-color: #0078ff;
+    background-color: white;
     box-shadow: 0px 5px 20x 0px rgb(57, 228, 131 / 50%);
 }
 
@@ -61,8 +61,8 @@
 
 .services__description {
     font-family: 'Roboto', sans-serif; 
-    font-weight: 400; 
-    color: white;
+    font-weight: 800; 
+    color: #0078ff;
 }
 
 .services {
