@@ -167,6 +167,17 @@ img {
   animation: button-push 0.3s linear 1;
 }
 
+/* Global Styles for Dark Mode */
+body.dark-mode {
+  background-color: #121212; /* Dark background for body */
+  color: #ffffff; /* White text color for readability */
+}
+
+
+.nav__link {
+  color: #ddd; /* Light color for links in dark mode */
+}
+
 
 
  
