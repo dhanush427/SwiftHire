@@ -80,8 +80,10 @@ const JobList = () => {
   ];
 
   const handleApply = (jobTitle) => {
-    alert(`You have applied for the ${jobTitle} position!`);
+    alert(`You have applied for the ${jobTitle} position!`);    
   };
+
+  
 
   return (
     <section className="job-list container">
@@ -118,6 +120,12 @@ const JobList = () => {
                 onClick={() => handleApply(selectedJob.title)}
               >
                 Apply Now
+              </button>
+              <button
+                className="apply-btn"
+                onClick={() => handleApply(selectedJob.title)}
+              >
+                BookMark
               </button>
             </>
           ) : (

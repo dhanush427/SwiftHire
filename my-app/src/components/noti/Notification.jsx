@@ -17,7 +17,7 @@ const NotificationsBar = () => {
     return (
         <div className={`notifications-bar ${isOpen ? "open" : ""}`}>
             <button className="toggle-btn" onClick={toggleNotifications}>
-                {isOpen ? "▼" : "▲"}
+                {isOpen ? "▼ Close Notifications" : "▲ Open Notifications"}
             </button>
             {isOpen && (
                 <ul className="notifications-list">
