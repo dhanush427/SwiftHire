@@ -1,0 +1,79 @@
+.container {
+    padding: 2rem;
+}
+
+.section__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.role-form {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.role-form label {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.role-form select {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.questions-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.question-card {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.question-card p {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.question-card textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.75rem 1.5rem;
+    background-color: #0078ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #005bb5;
+}
+
+body.dark-mode .interview__title {
+    color: #fff;
+}
+
+body.dark-mode .question-question {
+color: #333;
+}

@@ -109,8 +109,8 @@ const JobList = () => {
               <h3 className="job-list__details-company">{selectedJob.company}</h3>
               <p><strong>Location:</strong> {selectedJob.location}</p>
               <p>{selectedJob.description}</p>
-              <h4>Requirements:</h4>
-              <ul>
+              <h4 className="reqTitle">Requirements:</h4>
+              <ul className="reqDesc">
                 {selectedJob.requirements.map((req, index) => (
                   <li key={index}>{req}</li>
                 ))}

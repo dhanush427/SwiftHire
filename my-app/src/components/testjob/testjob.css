@@ -121,4 +121,12 @@ body.dark-mode .services__info {
 body.dark-mode .job-list__details-company {
   color: #333;
 }
+
+body.dark-mode .reqTitle {
+  color: #333;
+}
+
+body.dark-mode .reqDesc {
+  color: #333;
+}
   
