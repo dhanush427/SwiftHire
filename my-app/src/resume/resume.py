@@ -1,13 +1,20 @@
 import spacy
 import re
+from spellchecker import Spellchecker
 
 nlp = spacy.load("en_core_web_sm")
+spell = Spellchecker()
 
 KEYWORDS = [
     "strategic planning", "project management", "cross-functional leadership", 
     "data-driven", "team collaboration", "stakeholder engagement", "process improvement", 
     "analytical thinking", "innovation", "results-oriented", "cost optimization", 
     "effective communication", "time management", "problem-solving", "client satisfaction"
+]
+
+SOFT_SKILLS = [
+    "leadership", "communication", "teamwork", "adaptability", 
+    "problem-solving", "creativity", "work ethic", "interpersonal skills"
 ]
 
 informal_to_formal = {
@@ -31,6 +38,13 @@ def make_text_formal(text):
         # Replace each informal term with the formal equivalent
         text = re.sub(r'\b{}\b'.format(informal), formal, text, flags=re.IGNORECASE)
     return text
+
+# use spellchecker library for suggestions
+def check_spelling(text):
+    words = text.split()
+    misspelled = spell.unknown(words)
+    if misspelled:
+        return f"Misspelled words: {', '.join(misspelled)}"
 
 
 def add_missing_keywords(text, keywords):
@@ -69,7 +83,12 @@ def process_resume(file_path):
     formal_text = make_text_formal(original_text)
 
     enhanced_text = add_missing_keywords(formal_text, KEYWORDS)
+
     suggestions = suggest_improvements(enhanced_text)
+    
+    spelling = check_spelling(enhanced_text)
+    print(spelling)
+
 
     updated_file = "updated_resume.txt"
     with open(updated_file, "w") as file:
