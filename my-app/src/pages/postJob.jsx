@@ -1,6 +1,53 @@
 import React from 'react';
 
 const JobPost = () => {
+    // form
+    const [formData, setFormData] = useState({
+        companyName: '',
+        roleTitle: '',
+        roleDescription: '',
+    });
+
+    const [message, setMessage] = useState('');
+
+    // show change
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({ ...prevData, [name]: value }));
+    };
+
+    // handle form submit, broken cause of mongo
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        // validate form inputs
+        if (!formData.companyName || !formData.roleTitle || !formData.roleDescription) {
+            setMessage('All fields are required.');
+            return;
+        }
+
+        try {
+            // send form data to the backend
+            const response = await fetch('/api/job-posts', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                setMessage('Job posting successfully created!');
+                setFormData({ companyName: '', roleTitle: '', roleDescription: '' });
+            } else {
+                const errorData = await response.json();
+                setMessage(`Error: ${errorData.message}`);
+            }
+            // only getting submission errors idk
+        } catch (error) {
+            setMessage('An error occurred. Please try again.');
+            console.error('Submission Error:', error);
+        }
+    };
+
     return (
 <main className="main">
             <h1>Post a Job</h1>
