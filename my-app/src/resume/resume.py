@@ -46,6 +46,11 @@ def check_spelling(text):
     if misspelled:
         return f"Misspelled words: {', '.join(misspelled)}"
 
+# get soft skills in text
+def soft_skills(text, soft_skills):
+    found_skills = [skill for skill in soft_skills if skill.lower() in text.lower()]
+    return found_skills
+
 
 def add_missing_keywords(text, keywords):
     missing_keywords = [kw for kw in keywords if kw.lower() not in text.lower()]
@@ -89,6 +94,12 @@ def process_resume(file_path):
     spelling = check_spelling(enhanced_text)
     print(spelling)
 
+    # suggest different soft skills
+    found_skills = soft_skills(enhanced_text, SOFT_SKILLS)
+    print("soft skills: ", found_skills)
+    for skill in found_skills:
+        if skill in SOFT_SKILLS:
+            print(f"consider adding: {skill}\n")
 
     updated_file = "updated_resume.txt"
     with open(updated_file, "w") as file:
