@@ -58,6 +58,20 @@ def add_missing_keywords(text, keywords):
         text += "\n\nAdditional Skills:\n" + ", ".join(missing_keywords)
     return text
 
+# count num for each keyword
+def keyword_frequency(text, keywords):
+    count = {keyword: text.lower().count(keyword.lower()) for keyword in keywords}
+    return count
+
+
+# generate summary of resume using the first 3 sentences
+def get_summary(text):
+    doc = nlp(text)
+    sentences = [sent.text.strip() for sent in doc.sents]
+    return " ".join(sentences[:3])
+
+
+
 def suggest_improvements(text):
     suggestions = []
     doc = nlp(text)
@@ -100,6 +114,15 @@ def process_resume(file_path):
     for skill in found_skills:
         if skill in SOFT_SKILLS:
             print(f"consider adding: {skill}\n")
+
+    # show frequency of keywords
+    keyword_analysis = keyword_frequency(enhanced_text, KEYWORDS)
+    print("keyword frequency: ", keyword_analysis)
+
+    # generate summary
+    summary = get_summary(enhanced_text)
+    print("resume summary:", summary)
+
 
     updated_file = "updated_resume.txt"
     with open(updated_file, "w") as file:
